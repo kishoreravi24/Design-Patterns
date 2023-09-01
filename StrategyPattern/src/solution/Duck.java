@@ -20,19 +20,4 @@ public abstract class Duck{
     public void swim() {
         System.out.println("All ducks float,even decoys");
     }
-
-    public static class RubberDuck extends Duck {
-        @Override
-        public void display(){
-            System.out.println("RubberDuck");
-        }
-
-        public void flyType(){
-            performFly().flyWithWings();
-        }
-
-        public void quackType(){
-            quackBehavior.quack();
-        }
-    }
 }

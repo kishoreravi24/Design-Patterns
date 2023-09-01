@@ -1,0 +1,1 @@
+Add an adapter for turkey, so that we can use that in duckimpl

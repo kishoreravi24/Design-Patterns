@@ -31,7 +31,7 @@ no 23 from gang of four only 6 to master it:
 
 creational : Factory
 structural : Adapter, Decorator
-behavioral : Iterator, Observor, Strategy
+behavioral : Facade, Observor, Strategy
 
 Strategy:
 [Check the code]
@@ -41,3 +41,55 @@ Strategy:
 
 * Duck has a flyBehaviour and quackBehaviour 
 * MallardDuck is a inheritance of the Duck
+
+
+Adapter:
+[Check the code]
+Eg: european mobiler charger does not fit in american switch box, for that you need mobile charging adapter, european charger -> adapter -> american switch box
+
+* Your system/main class need to fit with the vendor class you need an adapter class
+* This pattern converts the interface of a class into another interface that client class expects.
+
+
+Observer: 
+[Check the code]
+* when one object change its state all its dependency needs to update automatically
+* one to many relationship , subject -> observer1,observer2,observer3 waiting for the state change
+
+Decorate:
+[check the code]
+* add responsible to the object dynamically 
+
+Facade:
+[Check the code]
+* Single class responsible for entire subsystem
+
+Factory:
+[Check the code]
+* class must have one instance
+* Duck duck;
+	if(picnic){
+		duck = new MallardDuck();
+	}else if(hunting){
+		duck = new RedHeadDuck();
+	}
+
+* above code - runtime decision making
+
+another example:
+	* I have one product store which create Tshirt and Pant
+	  	* common thing selling the product, put that in interface
+	* I have another product store which create Shoes
+		* common thing selling the product, put that in interface
+	* Now India have different way of creating the Tshirt and Pant, where in America have different way of creating it
+
+	problem:
+		create India instance and create Product A and Product B and pass it to India, but the factory pattern says need to use one instance in a class
+
+	Solution:
+		create product A and Product B as it is
+		create common interface called Factory then inside that createProduct method
+		create India, America class implements Factory
+
+		Then use Factory to create india and america instances with that instances create products
+
