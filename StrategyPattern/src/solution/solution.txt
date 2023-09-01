@@ -1,0 +1,12 @@
+Create interface for fly and quackable
+Create class with swim and display methods
+
+now,
+* MallardDuck will fly,quack and display don't swim,so implements fly,quackable extends display
+* RedheadDuck follows same
+* RubberDuck extends displays and implements quackable
+* DecoyDuck extends displays
+
+* but sill redutant codes are there why because MallardDuck and RedHeadDuck shares same, so it have the same method implementation
+for the fly and quack.
+* Inheritance and Interface didn't work well. (the way we use is causing the problem)

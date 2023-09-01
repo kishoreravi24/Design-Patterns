@@ -1,0 +1,43 @@
+Design patterns:
+	Provide a resuable solution for common problems
+
+	1) Creational pattern - mainly talk about use interface/inheritance in class instead of concrete and object creation
+		* Singleton pattern - class must have one instance
+		* Factory method pattern - create instance for several derived class
+		* Abstract Factory method pattern - create instance for several family class
+		* Builder - seperate object creation from its representation
+	2) Structural pattern - relationship of the object
+		* Adapter pattern - provide interface for different classes
+		* Composite pattern - simple and composite object
+		* Facede pattern - single class responsible for enitre subsystem
+		* Decorate pattern - add responsible to the object dynamically 
+	3) Behavioral pattern - interaction/communication between the object
+		* Observer pattern - when one object change it state all it dependency needs to be update automatically
+		* Command pattern - command request as an object
+		* State pattern - alter object behaviour when the state changes
+		* Strategy pattern - implements algorithm in the class
+
+-> has-a (compensation)
+-|> is - a (inheritance)
+--> dependency class lion is a inheritance of class animal, inside the lion we have type Cat , the Cat is also a class , so like
+class lion implements animal {
+	public String getCatType(Cat cat){
+		return cat;
+	}
+}
+here the cat is dependency
+
+no 23 from gang of four only 6 to master it:
+
+creational : Factory
+structural : Adapter, Decorator
+behavioral : Iterator, Observor, Strategy
+
+Strategy:
+[Check the code]
+* The strategy pattern lets you switch between different methods for doing a task without changing the object using them. in code when the state of duck fly method changes means it change the object of the paticluar behaviour alters.
+
+* when the state changes it alters the object behavior.
+
+* Duck has a flyBehaviour and quackBehaviour 
+* MallardDuck is a inheritance of the Duck

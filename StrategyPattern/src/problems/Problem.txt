@@ -1,0 +1,3 @@
+* Its not the best design, because Flying and quacking get no benefits from the inheritance
+* No reuse benefits, code duplicates on RubberDuck and DecoyDuck just to say no fly and no quack
+* Runtime behavior changes are difficult
