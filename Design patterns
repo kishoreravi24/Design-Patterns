@@ -93,3 +93,5 @@ another example:
 
 		Then use Factory to create india and america instances with that instances create products
 
+-- bonus
+Iterator Pattern: It comes under behavioral pattern that helps to access the list of item from the collection sequentially without knowing how the collection is structuraly formed internally.
